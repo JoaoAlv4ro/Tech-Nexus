@@ -1,6 +1,6 @@
 #include "NextDisplay.h"
 
-bool alphabet[36][8][5] = {
+bool font[36][8][5] = {
   // Letras de A a Z (0 a 25)
   // A
   {

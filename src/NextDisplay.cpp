@@ -20,7 +20,7 @@ void NextDisplay::displayLetter(int letterIndex) {
   for (int i = 0; i < 8; i++) {
     digitalWrite(rows[i], LOW); // Liga a linha
     for (int j = 0; j < 5; j++) {
-      if (alphabet[letterIndex][i][j] == 1) {
+      if (font[letterIndex][i][j] == 1) {
         digitalWrite(cols[j], HIGH); // Liga a coluna
       }
       delay(1); // Pequena demora para que o LED acenda de uma forma mais visivel
@@ -49,8 +49,8 @@ void NextDisplay::displayChosenLetter(char input) {
 }
 
 // Exibir todo o alfabeto na matriz
-void NextDisplay::displayAlphabet() {
-  for (int k = 0; k < 26; k++) { // Loop para percorrer todas as letras do alfabeto
+void NextDisplay::displayFont() {
+  for (int k = 0; k < 36; k++) { // Loop para percorrer todas as letras do alfabeto
     for (int t = 0; t < 500; t++) { // Exibir cada letra por um tempo (ajuste conforme necessário)
       displayLetter(k);
     }
