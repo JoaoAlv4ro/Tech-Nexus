@@ -9,7 +9,7 @@
 
 #include "Arduino.h"
 
-extern bool font[36][8][5]; // Declaração externa da matriz para letras do alfabeto
+extern bool font[42][8][5]; // Declaração externa da matriz para letras do alfabeto
 
 class NextDisplay {
   public:
